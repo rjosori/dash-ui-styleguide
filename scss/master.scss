@@ -204,6 +204,8 @@ a, button {
       }
       &.text-color-inv {
         background-color: $text-color-inv;
+        border: 1px solid $accent-gray;
+        color: $dark-gray;
       }
       &.text-color {
         background-color: $text-color;

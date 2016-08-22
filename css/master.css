@@ -134,7 +134,9 @@ a:focus, button:focus {
       border: 1px solid #E5E5E5;
       color: #333333; }
     .page-container .color-bubble.text-color-inv {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      border: 1px solid #E5E5E5;
+      color: #333333; }
     .page-container .color-bubble.text-color {
       background-color: #666666; }
     .page-container .color-bubble.focus-color {
