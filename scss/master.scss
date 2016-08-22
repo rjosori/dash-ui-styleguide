@@ -43,7 +43,7 @@ h2, h3, h4, h5, h6 {
 
 $nav-blue: #0a1e37;
 $dark-blue: #192A44;
-$background-blue: #0a2c45;
+$bg-blue: #0a2c45;
 $medium-blue: #334a6b;
 $light-blue: #00709A;
 $dash-green: #288e50;
@@ -54,7 +54,7 @@ $dark-gray: #333333;
 $accent-gray: #E5E5E5;
 $pale-gray: #f9f9f9;
 $white: #ffffff;
-$text-color-inverse: #ffffff;
+$text-color-inv: #ffffff;
 $text-color: #666666;
 $focus-color: #00cccc;
 
@@ -62,11 +62,11 @@ $focus-color: #00cccc;
 /*************************************** DEFAULT TEXT STYLES ***************************************/
 
 .page-title {
-  background-color: $background-blue;
+  background-color: $bg-blue;
   margin: 0 0 60px;
   font-size: 36px;
   padding: 24px;
-  color: $text-color-inverse;
+  color: $text-color-inv;
 }
 
 .section-title {
@@ -97,7 +97,7 @@ $focus-color: #00cccc;
     float: left;
     display: inline-block;
     a {
-      color: $text-color-inverse;
+      color: $text-color-inv;
       font-size: 18px;
       text-transform: uppercase;
       display: block;
@@ -137,5 +137,79 @@ a, button {
 
     .section {
       margin: 30px 0;
+    }
+
+    .code-snippet {
+      font-family: "Courier New";
+      color: $medium-blue;
+      font-size: 14px;
+    }
+
+    .color-bubble {
+      background-color: $dark-blue;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      color: $white;
+      float: left;
+      margin: 10px;
+      text-align: center;
+      display: block;
+      font-size: 12px;
+      padding-top: 35px;
+      font-family: 'Source Sans Pro Bold', sans-serif;
+      &.nav-blue {
+        background-color: $nav-blue;
+      }
+      &.dark-blue {
+        background-color: $dark-blue;
+      }
+      &.bg-blue {
+        background-color: $bg-blue;
+      }
+      &.medium-blue {
+        background-color: $medium-blue;
+      }
+      &.light-blue {
+        background-color: $light-blue;
+      }
+      &.dash-green {
+        background-color: $dash-green;
+      }
+      &.dark-green {
+        background-color: $dark-green;
+      }
+      &.dash-red {
+        background-color: $dash-red;
+      }
+      &.dash-yellow {
+        background-color: $dash-yellow;
+      }
+      &.dark-gray {
+        background-color: $dark-gray;
+      }
+      &.accent-gray {
+        background-color: $accent-gray;
+        color: $dark-gray;
+      }
+      &.pale-gray {
+        background-color: $pale-gray;
+        border: 1px solid $accent-gray;
+        color: $dark-gray;
+      }
+      &.white {
+        background-color: $white;
+        border: 1px solid $accent-gray;
+        color: $dark-gray;
+      }
+      &.text-color-inv {
+        background-color: $text-color-inv;
+      }
+      &.text-color {
+        background-color: $text-color;
+      }
+      &.focus-color {
+        background-color: $focus-color;
+      }
     }
   }

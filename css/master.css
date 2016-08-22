@@ -85,3 +85,57 @@ a:focus, button:focus {
   padding: 20px 0; }
   .page-container .section {
     margin: 30px 0; }
+  .page-container .code-snippet {
+    font-family: "Courier New";
+    color: #334a6b;
+    font-size: 14px; }
+  .page-container .color-bubble {
+    background-color: #192A44;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    color: #ffffff;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    padding-top: 35px;
+    font-family: 'Source Sans Pro Bold', sans-serif; }
+    .page-container .color-bubble.nav-blue {
+      background-color: #0a1e37; }
+    .page-container .color-bubble.dark-blue {
+      background-color: #192A44; }
+    .page-container .color-bubble.bg-blue {
+      background-color: #0a2c45; }
+    .page-container .color-bubble.medium-blue {
+      background-color: #334a6b; }
+    .page-container .color-bubble.light-blue {
+      background-color: #00709A; }
+    .page-container .color-bubble.dash-green {
+      background-color: #288e50; }
+    .page-container .color-bubble.dark-green {
+      background-color: #195731; }
+    .page-container .color-bubble.dash-red {
+      background-color: #98452e; }
+    .page-container .color-bubble.dash-yellow {
+      background-color: #BFAF26; }
+    .page-container .color-bubble.dark-gray {
+      background-color: #333333; }
+    .page-container .color-bubble.accent-gray {
+      background-color: #E5E5E5;
+      color: #333333; }
+    .page-container .color-bubble.pale-gray {
+      background-color: #f9f9f9;
+      border: 1px solid #E5E5E5;
+      color: #333333; }
+    .page-container .color-bubble.white {
+      background-color: #ffffff;
+      border: 1px solid #E5E5E5;
+      color: #333333; }
+    .page-container .color-bubble.text-color-inv {
+      background-color: #ffffff; }
+    .page-container .color-bubble.text-color {
+      background-color: #666666; }
+    .page-container .color-bubble.focus-color {
+      background-color: #00cccc; }
