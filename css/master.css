@@ -1,0 +1,87 @@
+/******************************************** FONTS ********************************************/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
+*, body, div, a, span, p, ul, li, strong {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: 'Source Sans Pro Light', sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.button, button {
+  font-family: 'Source Sans Pro Bold', sans-serif; }
+
+/******************************************** COLORS ********************************************/
+/*************************************** DEFAULT TEXT STYLES ***************************************/
+.page-title {
+  background-color: #0a2c45;
+  margin: 0 0 60px;
+  font-size: 36px;
+  padding: 24px;
+  color: #ffffff; }
+
+.section-title {
+  font-size: 24px;
+  color: #334a6b;
+  margin: 0 0 25px; }
+
+.page-intro {
+  font-size: 18px;
+  color: #333333; }
+
+/*************************************** DEFAULT BUTTON, NAV AND ANCHOR STYLES ***************************************/
+.main-nav {
+  background-color: #0a1e37;
+  height: 85px;
+  padding: 30px 0; }
+  .main-nav ul {
+    float: right;
+    list-style: none;
+    list-style-type: none; }
+  .main-nav li {
+    float: left;
+    display: inline-block; }
+    .main-nav li a {
+      color: #ffffff;
+      font-size: 18px;
+      text-transform: uppercase;
+      display: block;
+      padding: 0 13px; }
+    .main-nav li button {
+      float: left;
+      margin-top: -10px;
+      margin-right: 26px; }
+
+.button, button {
+  text-transform: uppercase;
+  background-color: #288e50;
+  border-radius: 3px;
+  font-size: 16px; }
+  .button:hover, .button:active, .button:focus, button:hover, button:active, button:focus {
+    background-color: #195731; }
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
+a:focus, button:focus {
+  outline: 2px solid #00cccc; }
+
+/*************************************** DEMO STYLES ***************************************/
+.page-container {
+  margin: 0;
+  padding: 20px 0; }
+  .page-container .section {
+    margin: 30px 0; }
