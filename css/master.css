@@ -81,6 +81,12 @@ h2, h3, h4, h5, h6 {
   font-size: 16px; }
   .button:hover, .button:active, .button:focus, button:hover, button:active, button:focus {
     background-color: #195731; }
+  .button.ghost-button, button.ghost-button {
+    background-color: transparent;
+    color: #666666; }
+    .button.ghost-button:hover, .button.ghost-button:active, .button.ghost-button:focus, button.ghost-button:hover, button.ghost-button:active, button.ghost-button:focus {
+      background-color: transparent;
+      color: #333333; }
 
 /*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
 a:focus, button:focus {

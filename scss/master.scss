@@ -142,6 +142,14 @@ $focus-color: #00CCCC;
   &:hover, &:active, &:focus {
     background-color: $dark-green;
   }
+  &.ghost-button {
+    background-color: transparent;
+    color: $text-color;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      color: $dark-gray;
+    }
+  }
 }
 
 /*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
