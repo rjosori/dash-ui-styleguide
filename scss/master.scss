@@ -185,6 +185,12 @@ $default-border: 1px solid $accent-gray;
       .attribute {
         color: #d14;
       }
+      .comment {
+        font-size: $small-font-size;
+        color: $text-color;
+        font-style: italic;
+        text-transform: uppercase;
+      }
     }
 
     .color-box {
