@@ -70,7 +70,7 @@ $pale-gray: #f9f9f9;
 $white: #ffffff;
 $text-color-inv: #ffffff;
 $text-color: #666666;
-$focus-color: #008080;
+$focus-color: #00CCCC;
 
 
 /*************************************** DEFAULT TEXT STYLES ***************************************/
@@ -99,12 +99,14 @@ $focus-color: #008080;
 
 .main-nav {
   background-color: $nav-blue;
+  width: 100%;
   height: 85px;
   padding: 30px 0;
   ul {
-    float: right;
+    //float: right;
     list-style: none;
     list-style-type: none;
+    background: transparent;
   }
 
   li {
@@ -150,7 +152,7 @@ $default-border: 1px solid $accent-gray;
 
   .page-container {
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
 
     .section {
       margin: 30px 0;
@@ -158,7 +160,7 @@ $default-border: 1px solid $accent-gray;
 
     .code-snippet {
       font-family: Consolas, "Liberation Mono", Courier, monospace;
-      color: $focus-color;
+      color: #008080;
       font-size: $normal-font-size;
       moz-appearance:none;
       outline:0px none transparent;
@@ -183,11 +185,11 @@ $default-border: 1px solid $accent-gray;
       }
     }
 
-    .color-bubble {
+    .color-box {
       background-color: $dark-blue;
       width: 100px;
       height: 100px;
-      border-radius: 100px;
+      border-radius: 3px;
       color: $white;
       float: left;
       margin: 10px;

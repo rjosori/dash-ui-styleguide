@@ -8,14 +8,41 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/master.css">
 </head>
-<body>
-<div class="page-container">
-
+<body class="antialiased">
+<div class="page-container inner-wrap">
+  <div data-sticky-container>
+    <nav class="title-bar main-nav" data-sticky data-options="marginTop:0;">
+      <div class="title-bar-left logo">Dash</div>
+      <ul class="title-bar-right">
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Link B</a></li>
+        <li><a href="#">Link C</a></li>
+        <li><a class="nav-icon-link" href="#">Link D</a></li>
+        <li><button class="nav-button button">Link E</button></li>
+      </ul>
+    </nav>
+  </div>
   <div class="row">
     <div class="large-12 columns">
       <h1 class="page-title">This is an H1 Heading</h1>
       <div class="code-snippet h1 short">
         &lt;h1 class=<span class="attribute">"page-title"</span>&gt;<span class="code-text">This is an H1 Heading</span>&lt;/h1&gt;
+      </div>
+
+      <h2 class="section-title">Main Navigation</h2>
+      <div class="code-snippet">
+        &lt;div <span class="attribute">data-sticky-container</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;nav class=<span class="attribute">"title-bar main-nav"</span> data-options=<span class="attribute">"marginTop:0;" data-sticky</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"title-bar-left logo"</span>&gt;Dash&lt;/div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=<span class="attribute">"title-bar-right"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link A<</span>/span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-icon-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;button class=<span class="attribute">"nav-button button"</span>&gt;<span class="code-text">Link E</span>&lt;/button&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
+        <br>&lt;/div&gt;
       </div>
     </div>
   </div>
@@ -57,61 +84,33 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <h2 class="section-title">Main Navigation</h2>
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="#">Link A</a>
-          </li>
-          <li>
-            <a href="#">Link B</a>
-          </li>
-          <li>
-            <a href="#">Link C</a>
-          </li>
-          <li>
-            <a class="nav-icon-link" href="#">Link D</a>
-          </li>
-          <li>
-            <button class="nav-button button">Link E</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="section">
     <div class="row">
       <div class="large-12 columns">
-        <h2 class="section-title">Dash Colors</h2>
+        <h2 class="section-title">Dash UI Colors</h2>
       </div>
     </div>
     <div class="row">
-      <div class="color-bubble dark-blue">$dark-blue: <br/>#192A44</div>
-      <div class="color-bubble medium-blue">$medium-blue: <br/>#334a6b</div>
-      <div class="color-bubble light-blue">$light-blue: <br/>#00709A</div>
-      <div class="color-bubble dash-green">$dash-green: <br/>#288e50</div>
-      <div class="color-bubble dash-yellow">$dash-yellow: <br/>#BFAF26</div>
-      <div class="color-bubble dash-red">$dash-red: <br/>#98452e</div>
+      <div class="color-box dark-blue">$dark-blue: <br/>#192A44</div>
+      <div class="color-box medium-blue">$medium-blue: <br/>#334a6b</div>
+      <div class="color-box light-blue">$light-blue: <br/>#00709A</div>
+      <div class="color-box dash-green">$dash-green: <br/>#288e50</div>
+      <div class="color-box dash-yellow">$dash-yellow: <br/>#BFAF26</div>
+      <div class="color-box dash-red">$dash-red: <br/>#98452e</div>
     </div>
     <div class="row">
-      <div class="color-bubble nav-blue">$nav-blue: <br/>#0a1e37</div>
-      <div class="color-bubble background-blue">$bg-blue: <br/>#0a2c45</div>
-      <div class="color-bubble dark-green">$dark-green: <br/>#195731</div>
-      <div class="color-bubble focus-color">$focus-color: <br/>#00cccc</div>
+      <div class="color-box nav-blue">$nav-blue: <br/>#0a1e37</div>
+      <div class="color-box background-blue">$bg-blue: <br/>#0a2c45</div>
+      <div class="color-box dark-green">$dark-green: <br/>#195731</div>
+      <div class="color-box focus-color">$focus-color: <br/>#00cccc</div>
     </div>
     <div class="row">
-      <div class="color-bubble dark-gray">$dark-gray: <br/>#333333</div>
-      <div class="color-bubble text-color">$text-color: <br/>#666666</div>
-      <div class="color-bubble accent-gray">$accent-gray: <br/>#E5E5E5</div>
-      <div class="color-bubble pale-gray">$pale-gray: <br/>#f9f9f9</div>
-      <div class="color-bubble text-color-inv">$text-color-inv: <br/>#ffffff</div>
-      <div class="color-bubble white">$white: <br/>#ffffff</div>
-
+      <div class="color-box dark-gray">$dark-gray: <br/>#333333</div>
+      <div class="color-box text-color">$text-color: <br/>#666666</div>
+      <div class="color-box accent-gray">$accent-gray: <br/>#E5E5E5</div>
+      <div class="color-box pale-gray">$pale-gray: <br/>#f9f9f9</div>
+      <div class="color-box text-color-inv">$text-color-inv: <br/>#ffffff</div>
+      <div class="color-box white">$white: <br/>#ffffff</div>
     </div>
-  </div>
 
 </div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
