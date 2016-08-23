@@ -1,4 +1,4 @@
-/******************************************** FONTS ********************************************/
+/*************************************** FONTS AND TYPE ***************************************/
 @font-face {
   font-family: 'Source Sans Pro';
   src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
@@ -12,19 +12,19 @@
   font-family: 'Source Sans Pro Bold';
   src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
 *, body, div, a, span, p, ul, li, strong {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h1 {
-  font-family: 'Source Sans Pro Light', sans-serif; }
+  font-family: "Source Sans Pro Light", sans-serif; }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .button, button {
-  font-family: 'Source Sans Pro Bold', sans-serif; }
+  font-family: "Source Sans Pro Bold", sans-serif; }
 
 /******************************************** COLORS ********************************************/
 /*************************************** DEFAULT TEXT STYLES ***************************************/
@@ -79,6 +79,7 @@ h2, h3, h4, h5, h6 {
 a:focus, button:focus {
   outline: 2px solid #00cccc; }
 
+/************************ GLOBAL *******************************/
 /*************************************** DEMO STYLES ***************************************/
 .page-container {
   margin: 0;
@@ -88,7 +89,15 @@ a:focus, button:focus {
   .page-container .code-snippet {
     font-family: "Courier New";
     color: #334a6b;
-    font-size: 14px; }
+    font-size: 14px;
+    moz-appearance: none;
+    outline: 0px none transparent;
+    outline: 0;
+    border: 1px solid #E5E5E5; }
+    .page-container .code-snippet:focus {
+      outline: 0; }
+    .page-container .code-snippet.intro-p {
+      height: 150px; }
   .page-container .color-bubble {
     background-color: #192A44;
     width: 100px;
@@ -101,7 +110,7 @@ a:focus, button:focus {
     display: block;
     font-size: 12px;
     padding-top: 35px;
-    font-family: 'Source Sans Pro Bold', sans-serif; }
+    font-family: "Source Sans Pro Bold", sans-serif; }
     .page-container .color-bubble.nav-blue {
       background-color: #0a1e37; }
     .page-container .color-bubble.dark-blue {

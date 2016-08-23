@@ -1,4 +1,4 @@
-/******************************************** FONTS ********************************************/
+/*************************************** FONTS AND TYPE ***************************************/
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
@@ -19,24 +19,38 @@
   src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'), url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
 }
 
+$source-sans-light: 'Source Sans Pro Light', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
+$source-sans-semi: 'Source Sans Pro Semi Bold', sans-serif;
+$source-sans-bold: 'Source Sans Pro Bold', sans-serif;
+
+$small-font-size: 12px;
+$normal-font-size: 14px;
+$medium-font-size: 16px;
+$large-font-size: 18px;
+$xlarge-font-size: 24px;
+$xxlarge-font-size: 36px;
+
 *, body, div, a, span, p, ul, li, strong {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $source-sans;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-family: 'Source Sans Pro Light', sans-serif;
+  font-family: $source-sans-light;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $source-sans;
 }
 
 .button, button {
-  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-family: $source-sans-bold;
 }
+
+
 
 
 /******************************************** COLORS ********************************************/
@@ -76,7 +90,7 @@ $focus-color: #00cccc;
 }
 
 .page-intro {
-  font-size: 18px;
+  font-size: $large-font-size;
   color: $dark-gray;
 }
 
@@ -98,7 +112,7 @@ $focus-color: #00cccc;
     display: inline-block;
     a {
       color: $text-color-inv;
-      font-size: 18px;
+      font-size: $large-font-size;
       text-transform: uppercase;
       display: block;
       padding: 0 13px;
@@ -115,7 +129,7 @@ $focus-color: #00cccc;
   text-transform: uppercase;
   background-color: $dash-green;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: $medium-font-size;
   &:hover, &:active, &:focus {
     background-color: $dark-green;
   }
@@ -127,9 +141,12 @@ a, button {
     outline: 2px solid $focus-color;
   }
 }
+/************************ GLOBAL *******************************/
+
+$default-border: 1px solid $accent-gray;
 
 
-    /*************************************** DEMO STYLES ***************************************/
+/*************************************** DEMO STYLES ***************************************/
 
   .page-container {
     margin: 0;
@@ -142,7 +159,17 @@ a, button {
     .code-snippet {
       font-family: "Courier New";
       color: $medium-blue;
-      font-size: 14px;
+      font-size: $normal-font-size;
+      moz-appearance:none;
+      outline:0px none transparent;
+      outline: 0;
+      border: $default-border;
+      &:focus {
+        outline: 0;
+      }
+      &.intro-p {
+        height: 150px;
+      }
     }
 
     .color-bubble {
@@ -155,9 +182,9 @@ a, button {
       margin: 10px;
       text-align: center;
       display: block;
-      font-size: 12px;
+      font-size: $small-font-size;
       padding-top: 35px;
-      font-family: 'Source Sans Pro Bold', sans-serif;
+      font-family: $source-sans-bold;
       &.nav-blue {
         background-color: $nav-blue;
       }
