@@ -11,16 +11,22 @@
 <body class="antialiased">
 <div class="page-container inner-wrap">
   <div data-sticky-container>
-    <nav class="title-bar main-nav" data-sticky data-options="marginTop:0;">
-      <div class="title-bar-left logo">Dash</div>
-      <ul class="title-bar-right">
-        <li><a href="#">Link A</a></li>
-        <li><a href="#">Link B</a></li>
-        <li><a href="#">Link C</a></li>
-        <li><a class="nav-icon-link" href="#">Link D</a></li>
-        <li><button class="nav-button button">Link E</button></li>
-      </ul>
-    </nav>
+    <div class="nav-container sticky" data-options="marginTop:0;" data-sticky>
+      <div class="row">
+        <div class="columns large-12">
+          <nav class="title-bar main-nav">
+            <div class="title-bar-left logo">Dash</div>
+            <ul class="title-bar-right">
+              <li><a href="#">Link A</a></li>
+              <li><a href="#">Link B</a></li>
+              <li><a href="#">Link C</a></li>
+              <li><a class="nav-icon-link" href="#">Link D</a></li>
+              <li><button class="nav-button button">Link E</button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="large-12 columns">
@@ -32,16 +38,22 @@
       <h2 class="section-title">Main Navigation</h2>
       <div class="code-snippet">
         &lt;div <span class="attribute">data-sticky-container</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&lt;nav class=<span class="attribute">"title-bar main-nav"</span> data-options=<span class="attribute">"marginTop:0;" data-sticky</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"title-bar-left logo"</span>&gt;Dash&lt;/div&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=<span class="attribute">"title-bar-right"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link A<</span>/span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-icon-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;button class=<span class="attribute">"nav-button button"</span>&gt;<span class="code-text">Link E</span>&lt;/button&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
-        <br>&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"nav-container sticky"</span> data-options=<span class="attribute">"marginTop:0;" data-sticky</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"row"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"columns large-12"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class=<span class="attribute">"title-bar main-nav"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"title-bar-left logo"</span>&gt;<span class="code-text">Dash</span>&lt;/div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=<span class="attribute">"title-bar-right"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link A</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-icon-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;button class=<span class="attribute">"nav-button button"</span>&gt;<span class="code-text">Link E</span>&lt;/button&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;/div&gt;
         <br>&lt;/div&gt;
       </div>
     </div>
