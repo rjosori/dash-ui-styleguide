@@ -77,7 +77,7 @@ h2, h3, h4, h5, h6 {
 
 /*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
 a:focus, button:focus {
-  outline: 2px solid #00cccc; }
+  outline: 2px solid #008080; }
 
 /************************ GLOBAL *******************************/
 /*************************************** DEMO STYLES ***************************************/
@@ -87,17 +87,25 @@ a:focus, button:focus {
   .page-container .section {
     margin: 30px 0; }
   .page-container .code-snippet {
-    font-family: "Courier New";
-    color: #334a6b;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    color: #008080;
     font-size: 14px;
     moz-appearance: none;
     outline: 0px none transparent;
     outline: 0;
-    border: 1px solid #E5E5E5; }
+    border: 1px solid #E5E5E5;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #E5E5E5;
+    padding: 20px; }
     .page-container .code-snippet:focus {
       outline: 0; }
-    .page-container .code-snippet.intro-p {
-      height: 150px; }
+    .page-container .code-snippet.h1 {
+      margin-top: -40px; }
+    .page-container .code-snippet .code-text {
+      color: #333333; }
+    .page-container .code-snippet .attribute {
+      color: #d14; }
   .page-container .color-bubble {
     background-color: #192A44;
     width: 100px;
@@ -149,4 +157,4 @@ a:focus, button:focus {
     .page-container .color-bubble.text-color {
       background-color: #666666; }
     .page-container .color-bubble.focus-color {
-      background-color: #00cccc; }
+      background-color: #008080; }

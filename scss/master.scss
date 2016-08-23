@@ -70,7 +70,7 @@ $pale-gray: #f9f9f9;
 $white: #ffffff;
 $text-color-inv: #ffffff;
 $text-color: #666666;
-$focus-color: #00cccc;
+$focus-color: #008080;
 
 
 /*************************************** DEFAULT TEXT STYLES ***************************************/
@@ -157,18 +157,29 @@ $default-border: 1px solid $accent-gray;
     }
 
     .code-snippet {
-      font-family: "Courier New";
-      color: $medium-blue;
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      color: $focus-color;
       font-size: $normal-font-size;
       moz-appearance:none;
       outline:0px none transparent;
       outline: 0;
       border: $default-border;
+      margin-bottom: 30px;
+      background-color: $pale-gray;
+      border: $default-border;
+      padding: 20px;
       &:focus {
         outline: 0;
       }
-      &.intro-p {
-        height: 150px;
+      &.h1 {
+        margin-top: -40px;
+      }
+      .code-text {
+        color: $dark-gray;
+      }
+
+      .attribute {
+        color: #d14;
       }
     }
 
