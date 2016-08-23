@@ -75,12 +75,16 @@ $focus-color: #00CCCC;
 
 /*************************************** DEFAULT TEXT STYLES ***************************************/
 
-.page-title {
+.page-title-container {
   background-color: $bg-blue;
-  margin: 0 0 60px;
-  font-size: 36px;
+  width: 100%;
+  display: block;
   padding: 24px;
-  color: $text-color-inv;
+  margin: 0 0 60px;
+  .page-title {
+    font-size: 36px;
+    color: $text-color-inv;
+  }
 }
 
 .section-title {
@@ -105,7 +109,6 @@ $focus-color: #00CCCC;
     background: transparent;
     padding-top: 30px;
     ul {
-      //float: right;
       list-style: none;
       list-style-type: none;
       background: transparent;
@@ -166,20 +169,15 @@ $default-border: 1px solid $accent-gray;
       font-family: Consolas, "Liberation Mono", Courier, monospace;
       color: #008080;
       font-size: $normal-font-size;
-      moz-appearance:none;
-      outline:0px none transparent;
-      outline: 0;
       border: $default-border;
       margin-bottom: 30px;
       background-color: $pale-gray;
       border: $default-border;
       padding: 20px;
-      &:focus {
-        outline: 0;
-      }
       &.h1 {
-        margin-top: -40px;
+        margin-top: -30px;
       }
+
       .code-text {
         color: $dark-gray;
       }

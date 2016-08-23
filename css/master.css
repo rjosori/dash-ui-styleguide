@@ -28,12 +28,15 @@ h2, h3, h4, h5, h6 {
 
 /******************************************** COLORS ********************************************/
 /*************************************** DEFAULT TEXT STYLES ***************************************/
-.page-title {
+.page-title-container {
   background-color: #0a2c45;
-  margin: 0 0 60px;
-  font-size: 36px;
+  width: 100%;
+  display: block;
   padding: 24px;
-  color: #ffffff; }
+  margin: 0 0 60px; }
+  .page-title-container .page-title {
+    font-size: 36px;
+    color: #ffffff; }
 
 .section-title {
   font-size: 24px;
@@ -94,18 +97,13 @@ a:focus, button:focus {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     color: #008080;
     font-size: 14px;
-    moz-appearance: none;
-    outline: 0px none transparent;
-    outline: 0;
     border: 1px solid #E5E5E5;
     margin-bottom: 30px;
     background-color: #f9f9f9;
     border: 1px solid #E5E5E5;
     padding: 20px; }
-    .page-container .code-snippet:focus {
-      outline: 0; }
     .page-container .code-snippet.h1 {
-      margin-top: -40px; }
+      margin-top: -30px; }
     .page-container .code-snippet .code-text {
       color: #333333; }
     .page-container .code-snippet .attribute {
