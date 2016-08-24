@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Dash's UI Style Guide and Component Library</title>
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/master.css">
 </head>
 <body class="antialiased">
 <div class="page-container inner-wrap">
@@ -76,7 +75,7 @@
       <h2 class="section-title">Section Title</h2>
       <div class="code-snippet">
         &lt;h2 class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/h2&gt;
-        <br><span class="comment">or any other HTML tag:</span>
+        <br><span class="comment">//or any other HTML tag:</span>
         <br>&lt;h3 class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/h3&gt;
         <br>&lt;p class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/p&gt;
         <br>&lt;div class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/div&gt;
@@ -141,7 +140,159 @@
       <div class="color-box text-color-inv">$text-color-inv: <br/>#ffffff</div>
       <div class="color-box white">$white: <br/>#ffffff</div>
     </div>
+    <div class="section icons-section">
+      <div class="row">
+        <div class="columns large-12">
+          <h2 class="section-title">Dash Icons</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-12">
+          <h2 class="code-snippet">
+            <span class="comment">//Add icon class </span><br>
+            <span class="attribute">.icon-*-icon</span><br><br>
+            <span class="comment">//Then add size class: </span><br>
+            <span class="attribute">.small-sz</span><span> (36px)</span><br>
+            <span class="attribute">.default-sz</span><span> (48px)</span><br>
+            <span class="attribute">.large-sz</span><span> (64px)</span><br><br>
+            <span class="comment">//Here's an Example: </span><br>
+            &lt;span class=<span class="attribute">"icon-governance-icon large-sz"</span>&gt;&lt;/span&gt;<br><br>
+            <span class="comment">//Note: If no size is specified, the default font size of 48px is used.</span><br>
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <span class="icon-governance-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-governance-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-workforce-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-workforce-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-sustainability-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-sustainability-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-cyber-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-cyber-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <span class="icon-close-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-close-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-down-arrow-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-down-arrow-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-up-arrow-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-up-arrow-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-dropdown-arrow-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-dropdown-arrow-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <span class="icon-grid-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-grid-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-list-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-list-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-menu-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-menu-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-user-icn"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <span class="icon-organization-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-organization-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-topic-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-topic-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-keyword-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-keyword-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-warning-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-warning-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <span class="icon-star-filled-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-star-filled-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-star-outline-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-star-outline-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-search-alt-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-search-alt-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <span class="icon-search-icon"></span>
+          <div class="code-snippet">
+            &lt;span class=<span class="attribute">"icon-search-icon"</span>&gt;&lt;/span&gt;
+          </div>
+        </div>
+      </div>
 
+    </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/what-input/what-input.js"></script>

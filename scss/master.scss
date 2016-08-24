@@ -1,3 +1,5 @@
+@import 'util/util';
+
 /*************************************** FONTS AND TYPE ***************************************/
 @font-face {
   font-family: 'Source Sans Pro';
@@ -24,12 +26,12 @@ $source-sans: 'Source Sans Pro', sans-serif;
 $source-sans-semi: 'Source Sans Pro Semi Bold', sans-serif;
 $source-sans-bold: 'Source Sans Pro Bold', sans-serif;
 
-$small-font-size: 12px;
-$normal-font-size: 14px;
-$medium-font-size: 16px;
-$large-font-size: 18px;
-$xlarge-font-size: 24px;
-$xxlarge-font-size: 36px;
+$small-font-size: rem-calc(12);
+$normal-font-size: rem-calc(14);
+$medium-font-size: rem-calc(16);
+$large-font-size: rem-calc(18);
+$xlarge-font-size: rem-calc(24);
+$xxlarge-font-size: rem-calc(36);
 
 *, body, div, a, span, p, ul, li, strong {
   font-family: $source-sans;
@@ -73,24 +75,40 @@ $text-color: #666666;
 $focus-color: #00CCCC;
 
 
+/*Icon Fonts*/
+[class^="icon-"], [class*=" icon-"] {
+  font-size: rem-calc(48);
+  color: $text-color;
+  &.small-sz {
+    font-size: rem-calc(36);
+  }
+  &.default-sz {
+    font-size: rem-calc(48);
+  }
+  &.large-sz {
+    font-size: rem-calc(64);
+  }
+}
+
+
 /*************************************** DEFAULT TEXT STYLES ***************************************/
 
 .page-title-container {
   background-color: $bg-blue;
   width: 100%;
   display: block;
-  padding: 24px;
-  margin: 0 0 60px;
+  padding: rem-calc(24);
+  margin: rem-calc(0 0 60);
   .page-title {
-    font-size: 36px;
+    font-size: rem-calc(36);
     color: $text-color-inv;
   }
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: rem-calc(24);
   color: $medium-blue;
-  margin: 0 0 25px;
+  margin: rem-calc(0 0 25);
 }
 
 .page-intro {
@@ -104,10 +122,10 @@ $focus-color: #00CCCC;
 .nav-container {
   background-color: $nav-blue;
   width: 100%;
-  height: 85px;
+  height: rem-calc(85);
   .main-nav {
     background: transparent;
-    padding-top: 30px;
+    padding-top: rem-calc(30);
     ul {
       list-style: none;
       list-style-type: none;
@@ -124,11 +142,11 @@ $focus-color: #00CCCC;
         font-size: $large-font-size;
         text-transform: uppercase;
         display: block;
-        padding: 0 13px;
+        padding: rem-calc(0 13);
       }
       button {
         float: left;
-        margin-top: -10px;
+        margin-top: rem-calc(-10);
       }
     }
   }
@@ -137,7 +155,7 @@ $focus-color: #00CCCC;
 .button, button {
   text-transform: uppercase;
   background-color: $dash-green;
-  border-radius: 3px;
+  border-radius: rem-calc(3);
   font-size: $medium-font-size;
   &:hover, &:active, &:focus {
     background-color: $dark-green;
@@ -155,12 +173,12 @@ $focus-color: #00CCCC;
 /*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
 a, button {
   &:focus {
-    outline: 2px solid $focus-color;
+    outline: rem-calc(2) solid $focus-color;
   }
 }
 /************************ GLOBAL *******************************/
 
-$default-border: 1px solid $accent-gray;
+$default-border: rem-calc(1) solid $accent-gray;
 
 
 /*************************************** DEMO STYLES ***************************************/
@@ -170,7 +188,10 @@ $default-border: 1px solid $accent-gray;
     padding: 0;
 
     .section {
-      margin: 30px 0;
+      margin: rem-calc(30 0);
+      &.icons-section {
+        margin-top: rem-calc(60);
+      }
     }
 
     .code-snippet {
@@ -178,12 +199,13 @@ $default-border: 1px solid $accent-gray;
       color: #008080;
       font-size: $normal-font-size;
       border: $default-border;
-      margin-bottom: 30px;
+      margin-bottom: rem-calc(30);
       background-color: $pale-gray;
       border: $default-border;
-      padding: 20px;
+      padding: rem-calc(20);
+      text-align: left;
       &.h1 {
-        margin-top: -30px;
+        margin-top: rem-calc(-30);
       }
 
       .code-text {
@@ -203,16 +225,16 @@ $default-border: 1px solid $accent-gray;
 
     .color-box {
       background-color: $dark-blue;
-      width: 100px;
-      height: 100px;
-      border-radius: 3px;
+      width: rem-calc(100);
+      height: rem-calc(100);
+      border-radius: rem-calc(3);
       color: $white;
       float: left;
-      margin: 10px;
+      margin: rem-calc(10);
       text-align: center;
       display: block;
       font-size: $small-font-size;
-      padding-top: 35px;
+      padding-top: rem-calc(35);
       font-family: $source-sans-bold;
       &.nav-blue {
         background-color: $nav-blue;
@@ -250,17 +272,17 @@ $default-border: 1px solid $accent-gray;
       }
       &.pale-gray {
         background-color: $pale-gray;
-        border: 1px solid $accent-gray;
+        border: $default-border;
         color: $dark-gray;
       }
       &.white {
         background-color: $white;
-        border: 1px solid $accent-gray;
+        border: $default-border;
         color: $dark-gray;
       }
       &.text-color-inv {
         background-color: $text-color-inv;
-        border: 1px solid $accent-gray;
+        border: $default-border;
         color: $dark-gray;
       }
       &.text-color {
@@ -269,5 +291,10 @@ $default-border: 1px solid $accent-gray;
       &.focus-color {
         background-color: $focus-color;
       }
+    }
+
+    .demo-icon {
+      display: block;
+      text-align: center;
     }
   }

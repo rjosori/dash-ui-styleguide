@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'icomoon';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -48,3 +49,6 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//IMPORTANT: LEAVE HERE SO THAT IT OVERWRITES PRECEDING DEFAULT STYLES!
+@import 'master';
