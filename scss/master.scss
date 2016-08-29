@@ -49,7 +49,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .button, button {
-  font-family: $source-sans-bold;
+  font-family: $source-sans;
 }
 
 
@@ -153,7 +153,6 @@ $focus-color: #00CCCC;
 }
 
 .button, button {
-  text-transform: uppercase;
   background-color: $dash-green;
   border-radius: rem-calc(3);
   font-size: $medium-font-size;
@@ -162,10 +161,46 @@ $focus-color: #00CCCC;
   }
   &.ghost-button {
     background-color: transparent;
-    color: $text-color;
+    color: $light-blue;
     &:hover, &:active, &:focus {
       background-color: transparent;
-      color: $dark-gray;
+      text-decoration: underline;
+    }
+  }
+
+  &.clear {
+    background-color: transparent;
+    &.blue {
+      border: rem-calc(2) solid $medium-blue;
+      color: $medium-blue;
+      &:hover, &:active, &:focus {
+        background-color: $medium-blue;
+        color: $text-color-inv;
+      }
+    }
+    &.white {
+      border: rem-calc(2) solid $text-color-inv;
+      color: $text-color-inv;
+      &:hover, &:active, &:focus {
+        border: rem-calc(2) solid $medium-blue;
+        background-color: $medium-blue;
+      }
+    }
+
+  }
+  &.icon-button {
+    background-color: transparent;
+    display: inline-block;
+    width: rem-calc(48);
+    height: rem-calc(48);
+    &.light {
+      i {
+        color: $text-color-inv;
+      }
+    }
+    .no-text {
+      display: inline-block;
+      text-indent: -20000px;
     }
   }
 }
@@ -214,6 +249,9 @@ $default-border: rem-calc(1) solid $accent-gray;
 
       .attribute {
         color: #d14;
+        .variable {
+          color: #870a29;
+        }
       }
       .comment {
         font-size: $small-font-size;

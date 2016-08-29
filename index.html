@@ -20,7 +20,12 @@
               <li><a href="#">Link B</a></li>
               <li><a href="#">Link C</a></li>
               <li><a class="nav-icon-link" href="#">Link D</a></li>
-              <li><button class="nav-button button">Link E</button></li>
+              <li>
+                <button class="icon-button light">
+                  <i class="icon-user-icn"></i>
+                  <span class="no-text">My Account</span>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -59,7 +64,12 @@
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-icon-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;button class=<span class="attribute">"nav-button button"</span>&gt;<span class="code-text">Link E</span>&lt;/button&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=<span class="attribute">"icon-button"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/i&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=<span class="attribute">"no-text"</span>&gt;<span class="code-text">My Account</span>&lt;/span&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
@@ -104,11 +114,15 @@
       <h2 class="section-title">Buttons and Button-looking Anchors</h2>
       <button class="button">Default Button</button>
       <a href="#" class="button">Anchor Button</a>
+      <button class="button clear blue">Clear Button</button>
       <button class="button ghost-button">Ghost Button</button>
+
       <div class="code-snippet"><br>
-        &lt;button class=<span class="attribute">"button"</span>&gt;<span class="code-text">Default Button</span>&lt;/button&gt;<br>
-        &lt;a href="#" class=<span class="attribute">"button"</span>&gt;<span class="code-text">Anchor Button</span>&lt;/a&gt;<br>
-        &lt;button class=<span class="attribute">"button ghost-button"</span>&gt;<span class="code-text">Ghost Button</span>&lt;/button&gt;
+        &lt;button class=<span class="attribute">"button"</span>&gt;<span class="code-text">Default Button</span>&lt;/button&gt;
+        <br>&lt;a href="#" class=<span class="attribute">"button"</span>&gt;<span class="code-text">Anchor Button</span>&lt;/a&gt;
+        <br><span class="comment">//Use either .blue or .white classes to change border and text color:</span>
+        <br>&lt;button class=<span class="attribute">"button clear <span class="variable">blue</span>"</span>&gt;<span class="code-text">Clear Button</span>&lt;/button&gt;
+        <br>&lt;button class=<span class="attribute">"button ghost-button"</span>&gt;<span class="code-text">Ghost Button</span>&lt;/button&gt;
       </div>
     </div>
   </div>
@@ -149,145 +163,145 @@
       <div class="row">
         <div class="columns large-12">
           <h2 class="code-snippet">
-            <span class="comment">//Add icon class </span><br>
-            <span class="attribute">.icon-*-icon</span><br><br>
+            <span class="comment">//Add icon class (replace * below with icon name):</span><br>
+            <span class="attribute">.icon-<span class="variable">*</span>-icon</span><br><br>
             <span class="comment">//Then add size class: </span><br>
             <span class="attribute">.small-sz</span><span> (36px)</span><br>
             <span class="attribute">.default-sz</span><span> (48px)</span><br>
             <span class="attribute">.large-sz</span><span> (64px)</span><br><br>
             <span class="comment">//Here's an Example: </span><br>
-            &lt;span class=<span class="attribute">"icon-governance-icon large-sz"</span>&gt;&lt;/span&gt;<br><br>
-            <span class="comment">//Note: If no size is specified, the default font size of 48px is used.</span><br>
+            &lt;i class=<span class="attribute">"icon-governance-icon <span class="variable">large-sz</span>"</span>&gt;&lt;/i&gt;<br><br>
+            <span class="comment">//Note: If no size is specified, the default icon font size of 48px is used.</span><br>
           </h2>
         </div>
       </div>
       <div class="row">
         <div class="columns large-3 demo-icon">
-          <span class="icon-governance-icon"></span>
+          <i class="icon-governance-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-governance-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-governance-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-workforce-icon"></span>
+          <i class="icon-workforce-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-workforce-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-workforce-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-sustainability-icon"></span>
+          <i class="icon-sustainability-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-sustainability-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-sustainability-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-cyber-icon"></span>
+          <i class="icon-cyber-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-cyber-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="columns large-3 demo-icon">
-          <span class="icon-close-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-close-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-down-arrow-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-down-arrow-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-up-arrow-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-up-arrow-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-dropdown-arrow-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-dropdown-arrow-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-cyber-icon"</span>&gt;&lt;/in&gt;
           </div>
         </div>
       </div>
       <div class="row">
         <div class="columns large-3 demo-icon">
-          <span class="icon-grid-icon"></span>
+          <i class="icon-close-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-grid-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-close-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-list-icon"></span>
+          <i class="icon-down-arrow-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-list-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-down-arrow-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-menu-icon"></span>
+          <i class="icon-up-arrow-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-menu-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-up-arrow-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-user-icn"></span>
+          <i class="icon-dropdown-arrow-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="columns large-3 demo-icon">
-          <span class="icon-organization-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-organization-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-topic-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-topic-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-keyword-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-keyword-icon"</span>&gt;&lt;/span&gt;
-          </div>
-        </div>
-        <div class="columns large-3 demo-icon">
-          <span class="icon-warning-icon"></span>
-          <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-warning-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-dropdown-arrow-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
       </div>
       <div class="row">
         <div class="columns large-3 demo-icon">
-          <span class="icon-star-filled-icon"></span>
+          <i class="icon-grid-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-star-filled-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-grid-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-star-outline-icon"></span>
+          <i class="icon-list-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-star-outline-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-list-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-search-alt-icon"></span>
+          <i class="icon-menu-icon"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-search-alt-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-menu-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
         <div class="columns large-3 demo-icon">
-          <span class="icon-search-icon"></span>
+          <i class="icon-user-icn"></i>
           <div class="code-snippet">
-            &lt;span class=<span class="attribute">"icon-search-icon"</span>&gt;&lt;/span&gt;
+            &lt;i class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <i class="icon-organization-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-organization-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-topic-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-topic-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-keyword-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-keyword-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-warning-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-warning-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-3 demo-icon">
+          <i class="icon-star-filled-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-star-filled-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-star-outline-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-star-outline-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-search-alt-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-search-alt-icon"</span>&gt;&lt;/i&gt;
+          </div>
+        </div>
+        <div class="columns large-3 demo-icon">
+          <i class="icon-search-icon"></i>
+          <div class="code-snippet">
+            &lt;i class=<span class="attribute">"icon-search-icon"</span>&gt;&lt;/i&gt;
           </div>
         </div>
       </div>
