@@ -13,7 +13,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "close-icon"
+          "close"
         ]
       },
       "attrs": [
@@ -22,7 +22,7 @@
       "properties": {
         "order": 2,
         "id": 19,
-        "name": "close-icon",
+        "name": "close",
         "prevSize": 32,
         "code": 59648
       },
@@ -42,7 +42,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "cyber-icon"
+          "cyber"
         ]
       },
       "attrs": [
@@ -51,7 +51,7 @@
       "properties": {
         "order": 3,
         "id": 18,
-        "name": "cyber-icon",
+        "name": "cyber",
         "prevSize": 32,
         "code": 59649
       },
@@ -71,7 +71,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "down-arrow-icon"
+          "down-arrow"
         ]
       },
       "attrs": [
@@ -80,7 +80,7 @@
       "properties": {
         "order": 4,
         "id": 17,
-        "name": "down-arrow-icon",
+        "name": "down-arrow",
         "prevSize": 32,
         "code": 59650
       },
@@ -100,7 +100,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "dropdown-arrow-icon"
+          "dropdown-arrow"
         ]
       },
       "attrs": [
@@ -109,7 +109,7 @@
       "properties": {
         "order": 5,
         "id": 16,
-        "name": "dropdown-arrow-icon",
+        "name": "dropdown-arrow",
         "prevSize": 32,
         "code": 59651
       },
@@ -129,7 +129,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "governance-icon"
+          "governance"
         ]
       },
       "attrs": [
@@ -138,7 +138,7 @@
       "properties": {
         "order": 6,
         "id": 15,
-        "name": "governance-icon",
+        "name": "governance",
         "prevSize": 32,
         "code": 59652
       },
@@ -174,7 +174,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "grid-icon"
+          "grid"
         ]
       },
       "attrs": [
@@ -191,7 +191,7 @@
       "properties": {
         "order": 22,
         "id": 14,
-        "name": "grid-icon",
+        "name": "grid",
         "prevSize": 32,
         "code": 59653
       },
@@ -211,7 +211,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "keyword-icon"
+          "keyword"
         ]
       },
       "attrs": [
@@ -220,7 +220,7 @@
       "properties": {
         "order": 14,
         "id": 13,
-        "name": "keyword-icon",
+        "name": "keyword",
         "prevSize": 32,
         "code": 59654
       },
@@ -250,7 +250,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "list-icon"
+          "list"
         ]
       },
       "attrs": [
@@ -264,7 +264,7 @@
       "properties": {
         "order": 15,
         "id": 12,
-        "name": "list-icon",
+        "name": "list",
         "prevSize": 32,
         "code": 59655
       },
@@ -288,7 +288,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "menu-icon"
+          "menu"
         ]
       },
       "attrs": [
@@ -299,7 +299,7 @@
       "properties": {
         "order": 16,
         "id": 11,
-        "name": "menu-icon",
+        "name": "menu",
         "prevSize": 32,
         "code": 59656
       },
@@ -329,7 +329,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "organization-icon"
+          "organization"
         ]
       },
       "attrs": [
@@ -343,7 +343,7 @@
       "properties": {
         "order": 17,
         "id": 10,
-        "name": "organization-icon",
+        "name": "organization",
         "prevSize": 32,
         "code": 59657
       },
@@ -363,7 +363,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "search-alt-icon"
+          "search-alt"
         ]
       },
       "attrs": [
@@ -372,7 +372,7 @@
       "properties": {
         "order": 18,
         "id": 9,
-        "name": "search-alt-icon",
+        "name": "search-alt",
         "prevSize": 32,
         "code": 59658
       },
@@ -392,7 +392,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "search-icon"
+          "search"
         ]
       },
       "attrs": [
@@ -401,7 +401,7 @@
       "properties": {
         "order": 19,
         "id": 8,
-        "name": "search-icon",
+        "name": "search",
         "prevSize": 32,
         "code": 59659
       },
@@ -421,7 +421,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "star-filled-icon"
+          "star-filled"
         ]
       },
       "attrs": [
@@ -430,7 +430,7 @@
       "properties": {
         "order": 20,
         "id": 7,
-        "name": "star-filled-icon",
+        "name": "star-filled",
         "prevSize": 32,
         "code": 59660
       },
@@ -450,7 +450,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "star-outline-icon"
+          "star-outline"
         ]
       },
       "attrs": [
@@ -459,7 +459,7 @@
       "properties": {
         "order": 21,
         "id": 6,
-        "name": "star-outline-icon",
+        "name": "star-outline",
         "prevSize": 32,
         "code": 59661
       },
@@ -479,7 +479,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "sustainability-icon"
+          "sustainability"
         ]
       },
       "attrs": [
@@ -488,7 +488,7 @@
       "properties": {
         "order": 8,
         "id": 5,
-        "name": "sustainability-icon",
+        "name": "sustainability",
         "prevSize": 32,
         "code": 59662
       },
@@ -508,7 +508,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "topic-icon"
+          "topic"
         ]
       },
       "attrs": [
@@ -517,7 +517,7 @@
       "properties": {
         "order": 9,
         "id": 4,
-        "name": "topic-icon",
+        "name": "topic",
         "prevSize": 32,
         "code": 59663
       },
@@ -537,7 +537,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "up-arrow-icon"
+          "up-arrow"
         ]
       },
       "attrs": [
@@ -546,7 +546,7 @@
       "properties": {
         "order": 10,
         "id": 3,
-        "name": "up-arrow-icon",
+        "name": "up-arrow",
         "prevSize": 32,
         "code": 59664
       },
@@ -598,7 +598,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "warning-icon"
+          "warning"
         ]
       },
       "attrs": [
@@ -607,7 +607,7 @@
       "properties": {
         "order": 12,
         "id": 1,
-        "name": "warning-icon",
+        "name": "warning",
         "prevSize": 32,
         "code": 59666
       },
@@ -627,7 +627,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "workforce-icon"
+          "workforce"
         ]
       },
       "attrs": [
@@ -636,7 +636,7 @@
       "properties": {
         "order": 13,
         "id": 0,
-        "name": "workforce-icon",
+        "name": "workforce",
         "prevSize": 32,
         "code": 59667
       },
